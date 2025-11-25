@@ -113,11 +113,11 @@
 
 .post-blog-input:-webkit-autofill,
 .post-blog-input textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px var(--primary-lightest) inset !important;
-  box-shadow: 0 0 0 1000px var(--primary-lightest) inset !important;
-  -webkit-text-fill-color: var(--theme-black) !important;
-  color: var(--theme-black) !important;
-  border: 3px solid var(--primary-lightest);
+  -webkit-box-shadow: 0 0 0 1000px var(--theme-white) inset !important;
+  box-shadow: 0 0 0 1000px var(--theme-white) inset !important;
+  -webkit-text-fill-color: var(--theme-grey) !important;
+  color: var(--theme-grey) !important;
+  border: 3px solid var(--primary-light);
 }
 
 .post-blog-form-btn {
