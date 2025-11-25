@@ -1,17 +1,26 @@
 version: '3.8'
+
 services:
   backend:
-    build: ./backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: portfolio-backend
     ports:
       - "8080:8080"
     environment:
-      - SPRING_PROFILES_ACTIVE=prod
       - BLOG_PASSPHRASE=${BLOG_PASSPHRASE}
+    volumes:
+      - ./backend/data:/app/data
+    restart: unless-stopped
+
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: portfolio-frontend
     ports:
-      - "3000:80"
-    environment:
-      - NODE_ENV=production
+      - "80:80"
     depends_on:
       - backend
+    restart: unless-stopped

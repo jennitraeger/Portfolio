@@ -31,9 +31,18 @@ public class PortfolioApplicationTests {
 
     @Test
     void testGetAllBlogPosts() {
+        // First, create a post
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        String passphrase = "testpass";
+        String body = String.format("{\"passphrase\":\"%s\",\"blogPost\":{\"title\":\"Test Post\",\"date\":\"2025-09-16\",\"message\":\"Test Message\"}}", passphrase);
+        HttpEntity<String> entity = new HttpEntity<>(body, headers);
+        restTemplate.postForEntity(getBaseUrl(), entity, String.class);
+
+        // Now get all posts
         ResponseEntity<String> response = restTemplate.getForEntity(getBaseUrl(), String.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody()).contains("title"); // crude check for JSON structure
+        assertThat(response.getBody()).contains("Test Post");
     }
 
     @Test
