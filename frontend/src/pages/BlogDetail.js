@@ -41,9 +41,7 @@ function BlogDetail() {
         <h2>{post.title}</h2>
         <h3><strong>Date:</strong> {post.date}</h3>
         <hr />
-        {post.message.split('\n\n').map((para, idx) => (
-          <p key={idx} dangerouslySetInnerHTML={{ __html: Linkify(para) }} />
-        ))}
+        <p dangerouslySetInnerHTML={{ __html: Linkify(post.message.replace(/\n/g, '<br />')) }} />
         <br />
         <br />
         <Link className="return-to-blog" to="/blog">&larr; Back to Blogs</Link>
