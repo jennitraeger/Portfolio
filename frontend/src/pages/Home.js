@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Lottie from 'lottie-react';
 import { foxHello } from '../assets/animations';
 import './Home.css';
-import { profilePhoto } from '../assets/global';
+import { profilePhotoDesktop, profilePhotoMobile } from '../assets/global';
 import { opusLogo, cigLogo, ewuLogo } from '../assets/history';
 import { workHistory } from '../data/workHistory';
 import { educationHistory } from '../data/educationHistory';
@@ -24,7 +24,10 @@ function Home() {
     <div className="home-container">
       <div className="profile">
         <div className="profile-content-float">
-          <img src={profilePhoto} alt="Jennifer Traeger" className="profile-photo-float" />
+          <picture>
+            <source media="(max-width: 800px)" srcSet={profilePhotoMobile} />
+            <img src={profilePhotoDesktop} alt="Jennifer Traeger" className="profile-photo-float" />
+          </picture>
           <div className="profile-header">
             <h1>Hello, I'm Jenni</h1>
             <Lottie className="fox-animation" animationData={foxHello} />
