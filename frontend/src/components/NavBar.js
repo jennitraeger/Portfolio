@@ -24,7 +24,7 @@ function NavBar() {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/projects">Projects</Link></li>
-          {/* <li><Link to="/blog">Blog</Link></li> */}
+          <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li>
             <a href="/Jennifer-Traeger-Resume.pdf" download className="resume-link" onClick={() => setDropdownOpen(false)}>
@@ -41,7 +41,7 @@ function NavBar() {
         <ul className={`nav-dropdown-list${dropdownOpen ? ' open' : ''}`}>
           <li><Link to="/" onClick={() => setDropdownOpen(false)}>Home</Link></li>
           <li><Link to="/projects" onClick={() => setDropdownOpen(false)}>Projects</Link></li>
-          {/* <li><Link to="/blog" onClick={() => setDropdownOpen(false)}>Blog</Link></li> */}
+          <li><Link to="/blog" onClick={() => setDropdownOpen(false)}>Blog</Link></li>
           <li><Link to="/contact" onClick={() => setDropdownOpen(false)}>Contact</Link></li>
           <li>
             <a href="/Jennifer-Traeger-Resume.pdf" download className="resume-link" onClick={() => setDropdownOpen(false)} >

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import Linkify from 'linkify-react';
 import "./BlogDetail.css";
 
 function BlogDetail() {
@@ -24,16 +25,14 @@ function BlogDetail() {
       });
   }, [id]);
 
-  function Linkify(text) {
-    return text.replace(
-      /(https?:\/\/[^\s]+)/g,
-      '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
-    );
-  }
-
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
   if (!post) return <div>Blog post not found.</div>;
+
+  const linkifyOptions = {
+    target: '_blank',
+    rel: 'noopener noreferrer'
+  };
 
   return (
     <div className="blog-detail-container">
@@ -41,9 +40,9 @@ function BlogDetail() {
         <h2>{post.title}</h2>
         <h3><strong>Date:</strong> {post.date}</h3>
         <hr />
-        {post.message.split('\n\n').map((para, idx) => (
-          <p key={idx} dangerouslySetInnerHTML={{ __html: Linkify(para) }} />
-        ))}
+        <p style={{ whiteSpace: 'pre-line' }}>
+          <Linkify options={linkifyOptions}>{post.message}</Linkify>
+        </p>
         <br />
         <br />
         <Link className="return-to-blog" to="/blog">&larr; Back to Blogs</Link>
