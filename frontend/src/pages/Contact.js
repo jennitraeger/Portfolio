@@ -44,7 +44,7 @@ function Contact() {
                     <a href="https://www.linkedin.com/in/jtraeger/" target="_blank" rel="noopener noreferrer">
                         <img src={linkedinLogo} alt="LinkedIn Logo" />
                     </a>
-                    <a href="https://github.com/jgoodnight72" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/jennitraeger" target="_blank" rel="noopener noreferrer">
                         <img src={gitLogo} alt="GitHub Logo" />
                     </a>
                 </div>
