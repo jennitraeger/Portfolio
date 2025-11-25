@@ -1,1 +1,16 @@
 .env
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+node_modules/
+build/
+dist/
+target/
