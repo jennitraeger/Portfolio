@@ -17,7 +17,7 @@ function Contact() {
                     </div>
                     <Lottie className="pointer-animation" animationData={mapPointer} />
                 </div>
-                <form className="contact-form" action="https://formsubmit.co/jgoodnight7272@gmail.com" method="POST">
+                <form className="contact-form" action="https://formsubmit.co/jenni.traeger@outlook.com" method="POST">
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" required maxLength={40} />
                     <label htmlFor="email">Email:</label>
@@ -38,13 +38,13 @@ function Contact() {
                     <button type="submit">Send</button>
                 </form>
                 <div className="logos">
-                    <a href="mailto:jgoodnight7272@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:jenni.traeger@outlook.com" target="_blank" rel="noopener noreferrer">
                         <img src={emailLogo} alt="Email Logo"/>
                     </a>
                     <a href="https://www.linkedin.com/in/jtraeger/" target="_blank" rel="noopener noreferrer">
                         <img src={linkedinLogo} alt="LinkedIn Logo" />
                     </a>
-                    <a href="https://github.com/jgoodnight72" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/jennitraeger" target="_blank" rel="noopener noreferrer">
                         <img src={gitLogo} alt="GitHub Logo" />
                     </a>
                 </div>

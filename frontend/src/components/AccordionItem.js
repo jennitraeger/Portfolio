@@ -7,6 +7,7 @@ function AccordionItem({ job }) {
   return (
     <div className={`accordion-item${open ? ' open' : ''}`}>
       <button className="accordion-title" onClick={() => setOpen(!open)}>
+        <span className={`accordion-arrow${open ? ' open' : ''}`}>▶</span>
         {job.icon && job.icon}
         <span>{job.company}</span> — <span>{job.role}</span> <span style={{float: 'right'}}>{job.years}</span>
       </button>
