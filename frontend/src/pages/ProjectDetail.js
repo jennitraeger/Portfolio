@@ -28,6 +28,12 @@ function ProjectDetail() {
                 <img src={imageMap[project.id]} alt={project.title} className="project-detail-image" />
             </div>
             <div className="project-detail-right">
+                <h3>Tech Stack</h3>
+                <div className="project-detail-tags">
+                    {project.tags.map(tag => (
+                    <span key={tag} className="project-detail-tag">{tag}</span>
+                    ))}
+                </div>
                 <h3>View Project</h3>
                 {project.link && (
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-detail-link">
@@ -41,12 +47,6 @@ function ProjectDetail() {
                     View Repo
                   </a>
                 )}
-                <h3>Tech Stack</h3>
-                <div className="project-detail-tags">
-                    {project.tags.map(tag => (
-                    <span key={tag} className="project-detail-tag">{tag}</span>
-                    ))}
-                </div>
             </div>
         </div>
     </div>

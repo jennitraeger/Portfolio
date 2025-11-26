@@ -116,6 +116,11 @@
 
   .projects-container h2 {
     align-self: center;
+    font-size: 2rem;
+  }
+
+  .projects-container p {
+    font-size: 1rem;
   }
 
   .project-card {

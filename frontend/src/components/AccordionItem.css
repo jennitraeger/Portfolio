@@ -19,6 +19,18 @@
   gap: 0.5rem;
 }
 
+.accordion-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.accordion-subtitle {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: var(--theme-grey);
+}
+
 .accordion-arrow {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -72,7 +84,7 @@
   
   .accordion-title {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .history {

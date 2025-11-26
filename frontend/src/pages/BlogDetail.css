@@ -73,11 +73,17 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
   .blog-detail-post {
     width: 100%;
     max-width: 100%;
   }
+
   .blog-detail-container h3 {
     font-size: 1.25rem;
+  }
+
+  .blog-detail-post p {
+    font-size: 1rem;
   }
 }
