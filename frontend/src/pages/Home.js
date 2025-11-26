@@ -78,7 +78,7 @@ function Home() {
           {[
             {
               company: 'Eastern Washington University',
-              role: 'BSCS',
+              role: 'BS Computer Science',
               years: '2017 - 2021',
               details: educationHistory,
               icon: <img src={ewuLogo} alt="EWU Icon" className="history-icons" />
