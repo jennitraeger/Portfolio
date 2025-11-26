@@ -9,11 +9,13 @@ import { educationHistory } from '../data/educationHistory';
 import { skillIcons } from '../data/skillIcons';
 import AccordionItem from '../components/AccordionItem';
 
+const CAREER_START_YEAR = 2021;
+
 function Home() {
 
   /* Constants */
 
-  const yearsExperience = new Date().getFullYear() - 2021;
+  const yearsExperience = new Date().getFullYear() - CAREER_START_YEAR;
   const skillCategories = Object.keys(skillIcons);
   const [selectedSkill, setSelectedSkill] = useState(skillCategories[0]);
 

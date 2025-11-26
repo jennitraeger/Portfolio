@@ -22,7 +22,6 @@ function AccordionItem({ job }) {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.7, ease: [0.2, 0, 0.2, 0.8] }}
-            style={{ overflow: 'hidden' }}
           >
             {Array.isArray(job.details)
               ? <ul>{job.details.map((item, i) => <li key={i}>{item}</li>)}</ul>

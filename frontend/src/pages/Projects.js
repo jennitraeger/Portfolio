@@ -17,7 +17,7 @@ function Projects() {
       </div>
       <div className="projects-cards">
         {projects.map((project) => (
-          <Link to={`/projects/${project.id}`} className="project-link" key={project.id} style={{ textDecoration: 'none' }}>
+          <Link to={`/projects/${project.id}`} className="project-link" key={project.id}>
             <div className="project-card">
               <img className="project-photo" src={imageMap[project.id]} alt={`${project.title} screenshot`} />
               <div className="project-description">

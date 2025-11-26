@@ -40,7 +40,7 @@ function BlogDetail() {
         <h2>{post.title}</h2>
         <h3><strong>Date:</strong> {post.date}</h3>
         <hr />
-        <p style={{ whiteSpace: 'pre-line' }}>
+        <p className="preserve-whitespace">
           <Linkify options={linkifyOptions}>{post.message}</Linkify>
         </p>
         <br />

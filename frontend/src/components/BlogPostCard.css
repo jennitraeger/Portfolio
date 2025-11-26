@@ -1,5 +1,13 @@
 /* Blog Post Basics */
 
+.blog-post-link {
+  text-decoration: none;
+}
+
+.preserve-whitespace {
+  white-space: pre-line;
+}
+
 .blog-post {
   margin: 24px 0;
   width: 100%;
@@ -27,7 +35,7 @@
   font-size: 1rem;
   align-self: flex-start;
   margin-left: 2rem;
-  margin-top: 0rem;
+  margin-top: 0;
   margin-bottom: 1rem;
   color: var(--theme-black);
 }

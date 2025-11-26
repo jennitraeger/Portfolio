@@ -7,6 +7,9 @@ import PassphraseModal from '../components/PassphraseModal';
 import BlogPostModal from '../components/BlogPostModal';
 import BlogPostCard from '../components/BlogPostCard';
 
+const POSTS_PER_PAGE = 3;
+const PREVIEW_LENGTH = 110;
+
 function Blog() {
   const {
     posts,
@@ -17,8 +20,8 @@ function Blog() {
     deleteBlogPost,
     verifyPassphrase
   } = useBlog();
-  const postsPerPage = 3;
-  const previewLength = 110;
+  const postsPerPage = POSTS_PER_PAGE;
+  const previewLength = PREVIEW_LENGTH;
   const {
     currentPage,
     pageNumbers,
@@ -93,21 +96,8 @@ function Blog() {
   };
 
   if (loading) return (
-    <div className="blog-loading-spinner" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '40vh' }}>
-      <div style={{
-        width: '48px',
-        height: '48px',
-        border: '6px solid var(--theme-cream)',
-        borderTop: '6px solid var(--secondary-light)',
-        borderRadius: '50%',
-        animation: 'spin 1s linear infinite'
-      }} />
-      <style>{`
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
+    <div className="blog-loading-spinner">
+      <div className="spinner-circle" />
     </div>
   );
   if (error) return <div>Error: {error}</div>;
