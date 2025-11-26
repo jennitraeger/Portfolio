@@ -6,6 +6,8 @@ export { default as bootstrapIcon } from './bootstrap.svg';
 export { default as dotnetIcon } from './dotnet.svg';
 export { default as databaseIcon } from './database.svg';
 export { default as springbootIcon } from './springboot.svg';
+export { default as pythonIcon } from './python.png';
+export { default as djangoIcon } from './django.png';
 export { default as awsIcon } from './aws.svg';
 export { default as dockerIcon } from './docker.svg';
 export { default as jenkinsIcon } from './jenkins.svg';

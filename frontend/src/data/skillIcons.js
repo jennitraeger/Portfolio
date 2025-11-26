@@ -7,6 +7,8 @@ import {
   dotnetIcon,
   databaseIcon,
   springbootIcon,
+  pythonIcon,
+  djangoIcon,
   awsIcon,
   dockerIcon,
   jenkinsIcon,
@@ -32,6 +34,8 @@ export const skillIcons = {
     { icon: <img className="skill-icon" src={databaseIcon} alt="Microsoft SQL Server" />, label: 'SQL' },
     { icon: <img className="skill-icon" src={javascriptIcon} alt="Java" />, label: 'Java' },
     { icon: <img className="skill-icon" src={springbootIcon} alt="Spring Boot" />, label: 'Spring Boot' },
+    { icon: <img className="skill-icon" src={pythonIcon} alt="Python" />, label: 'Python' },
+    { icon: <img className="skill-icon" src={djangoIcon} alt="Django" />, label: 'Django' },
   ],
   DevOps: [
     { icon: <img className="skill-icon" src={awsIcon} alt="AWS" />, label: 'AWS' },
