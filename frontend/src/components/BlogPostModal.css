@@ -102,8 +102,6 @@
   color: var(--theme-grey);
   transition: background-color 0.3s, border-color 0.3s;
   font-family: monospace;
-  margin-bottom: 1rem;
-  font-size: 1rem;
 }
 
 .post-blog-input:focus {
@@ -170,10 +168,9 @@
 
 .delete-blog-table th {
   background: var(--theme-cream);
-  color: var(--theme-black);
+  color: var(--theme-grey);
   font-weight: 700;
   border-bottom: 2px solid var(--theme-grey);
-  color: var(--theme-grey);
 }
 
 .delete-blog-table tr {

@@ -2,6 +2,10 @@
 
 /* Projects Page Basics */
 
+.project-link {
+  text-decoration: none;
+}
+
 .projects-container {
   background: var(--theme-cream);
   min-height: 100vh;
@@ -46,7 +50,6 @@
   display: flex;
   flex-direction: row;
   margin: 24px 0;
-  width: 100%;
   width: 750px;
   background: var(--primary-lightest);
   border-radius: 8px;
@@ -73,20 +76,6 @@
   color: var(--theme-black);
 }
 
-.project-tag-line {
-  display: flex;
-  align-items: center;
-
-}
-
-.project-card h4 {
-  font-size: 1rem;
-  margin: 0;
-  align-self: flex-start;
-  margin-top: 0.5rem;
-  color: var(--theme-black);
-}
-
 .project-tag {
   display: inline-block;
   background-color: var(--primary-dark);
@@ -109,19 +98,24 @@
 /* Mobile View */
 @media (max-width: 800px) {
 
-  .blog-container {
-    padding-left: 0rem;
-    padding-right: 0rem;
+  .projects-container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .projects-container h2 {
     align-self: center;
+    font-size: 2rem;
+  }
+
+  .projects-container p {
+    font-size: 1rem;
   }
 
   .project-card {
     flex-direction: column;
     align-items: center;
-    max-width: 300px
+    max-width: 300px;
   }
 
   .project-photo {

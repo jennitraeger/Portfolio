@@ -9,7 +9,10 @@ function AccordionItem({ job }) {
       <button className="accordion-title" onClick={() => setOpen(!open)}>
         <span className={`accordion-arrow${open ? ' open' : ''}`}>▶</span>
         {job.icon && job.icon}
-        <span>{job.company}</span> — <span>{job.role}</span> <span style={{float: 'right'}}>{job.years}</span>
+        <div className="accordion-text">
+          <div><span>{job.company}</span> — <span>{job.role}</span></div>
+          <div className="accordion-subtitle">{job.years}</div>
+        </div>
       </button>
       <AnimatePresence initial={false}>
         {open && (
@@ -19,7 +22,6 @@ function AccordionItem({ job }) {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.7, ease: [0.2, 0, 0.2, 0.8] }}
-            style={{ overflow: 'hidden' }}
           >
             {Array.isArray(job.details)
               ? <ul>{job.details.map((item, i) => <li key={i}>{item}</li>)}</ul>

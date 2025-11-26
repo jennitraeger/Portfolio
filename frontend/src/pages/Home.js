@@ -9,11 +9,13 @@ import { educationHistory } from '../data/educationHistory';
 import { skillIcons } from '../data/skillIcons';
 import AccordionItem from '../components/AccordionItem';
 
+const CAREER_START_YEAR = 2021;
+
 function Home() {
 
   /* Constants */
 
-  const yearsExperience = new Date().getFullYear() - 2021;
+  const yearsExperience = new Date().getFullYear() - CAREER_START_YEAR;
   const skillCategories = Object.keys(skillIcons);
   const [selectedSkill, setSelectedSkill] = useState(skillCategories[0]);
 
@@ -78,7 +80,7 @@ function Home() {
           {[
             {
               company: 'Eastern Washington University',
-              role: 'BSCS',
+              role: 'BS Computer Science',
               years: '2017 - 2021',
               details: educationHistory,
               icon: <img src={ewuLogo} alt="EWU Icon" className="history-icons" />
