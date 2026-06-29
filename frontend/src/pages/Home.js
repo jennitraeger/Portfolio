@@ -50,16 +50,30 @@ function Home() {
           {[
             {
               company: 'Opus Inspections',
+              role: 'Senior Software Developer',
+              years: '2026 - Present',
+              details: workHistory.opusSenior,
+              icon: <img src={opusLogo} alt="Opus Icon" className="history-icons" />
+            },
+            {
+              company: 'Opus Inspections',
               role: 'Software Developer',
-              years: '2023 - Present',
+              years: '2023 - 2026',
               details: workHistory.opus,
               icon: <img src={opusLogo} alt="Opus Icon" className="history-icons" />
             },
             {
               company: 'Capital Insurance Group',
               role: 'Software Developer II',
-              years: '2021 - 2023',
-              details: workHistory.cig,
+              years: '2022 - 2023',
+              details: workHistory.cigII,
+              icon: <img src={cigLogo} alt="CIG Icon" className="history-icons" />
+            },
+            {
+              company: 'Capital Insurance Group',
+              role: 'Software Developer I',
+              years: '2021 - 2022',
+              details: workHistory.cigI,
               icon: <img src={cigLogo} alt="CIG Icon" className="history-icons" />
             },
             {
@@ -82,7 +96,14 @@ function Home() {
               company: 'Eastern Washington University',
               role: 'BS Computer Science',
               years: '2017 - 2021',
-              details: educationHistory,
+              details: educationHistory.cs,
+              icon: <img src={ewuLogo} alt="EWU Icon" className="history-icons" />
+            },
+            {
+              company: 'Eastern Washington University',
+              role: 'BA Music',
+              years: '2017 - 2021',
+              details: educationHistory.music,
               icon: <img src={ewuLogo} alt="EWU Icon" className="history-icons" />
             }
           ].map((job, idx) => (
