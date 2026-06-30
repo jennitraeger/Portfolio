@@ -35,7 +35,7 @@ function Home() {
             <Lottie className="fox-animation" animationData={foxHello} />
           </div>
           <p className="profile-description-float">
-            I am a <strong>Full-Stack Software Developer</strong> on the Public Websites team at Opus Inspections with 
+            I am a <strong>Full-Stack Senior Software Developer</strong> on the Public Websites team at Opus Inspections with 
             <strong> {yearsExperience}+ years of experience</strong>. I thrive in fast-paced, sprint-driven environments where 
             meeting deadlines is essential, and I bring strong organizational skills that result in highly reusable, 
             maintainable solutions. Versatile across databases, user interfaces, and third-party integrations, I take 
