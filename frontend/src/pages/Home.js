@@ -35,10 +35,10 @@ function Home() {
             <Lottie className="fox-animation" animationData={foxHello} />
           </div>
           <p className="profile-description-float">
-            I am a <strong>Full-Stack Software Developer</strong> on the Public Websites team at Opus Inspections with 
-            <strong> {yearsExperience} years of experience</strong>. I thrive in fast-paced, sprint-driven environments where 
+            I am a <strong>Full-Stack Senior Software Developer</strong> on the Public Websites team at Opus Inspections with 
+            <strong> {yearsExperience}+ years of experience</strong>. I thrive in fast-paced, sprint-driven environments where 
             meeting deadlines is essential, and I bring strong organizational skills that result in highly reusable, 
-            maintainable solutions. Multifaceted across databases, user interfaces, and third-party integrations, I take 
+            maintainable solutions. Versatile across databases, user interfaces, and third-party integrations, I take 
             pride in building software that balances technical precision with real-world impact. I hold a <strong>Bachelor’s 
             Degree in Computer Science</strong> from Eastern Washington University. 
           </p>
@@ -50,16 +50,30 @@ function Home() {
           {[
             {
               company: 'Opus Inspections',
+              role: 'Senior Software Developer',
+              years: '2026 - Present',
+              details: workHistory.opusSenior,
+              icon: <img src={opusLogo} alt="Opus Icon" className="history-icons" />
+            },
+            {
+              company: 'Opus Inspections',
               role: 'Software Developer',
-              years: '2023 - Present',
+              years: '2023 - 2026',
               details: workHistory.opus,
               icon: <img src={opusLogo} alt="Opus Icon" className="history-icons" />
             },
             {
               company: 'Capital Insurance Group',
               role: 'Software Developer II',
-              years: '2021 - 2023',
-              details: workHistory.cig,
+              years: '2022 - 2023',
+              details: workHistory.cigII,
+              icon: <img src={cigLogo} alt="CIG Icon" className="history-icons" />
+            },
+            {
+              company: 'Capital Insurance Group',
+              role: 'Software Developer I',
+              years: '2021 - 2022',
+              details: workHistory.cigI,
               icon: <img src={cigLogo} alt="CIG Icon" className="history-icons" />
             },
             {
@@ -82,7 +96,14 @@ function Home() {
               company: 'Eastern Washington University',
               role: 'BS Computer Science',
               years: '2017 - 2021',
-              details: educationHistory,
+              details: educationHistory.cs,
+              icon: <img src={ewuLogo} alt="EWU Icon" className="history-icons" />
+            },
+            {
+              company: 'Eastern Washington University',
+              role: 'BA Music',
+              years: '2017 - 2021',
+              details: educationHistory.music,
               icon: <img src={ewuLogo} alt="EWU Icon" className="history-icons" />
             }
           ].map((job, idx) => (
